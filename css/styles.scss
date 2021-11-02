@@ -1,0 +1,81 @@
+$ff-main: 'Poppins', sans-serif;
+$ff-accent: 'Inter', sans-serif;
+
+$clr-dark: #06224a;
+$clr-medium: #0245a3;
+$clr-light: #bdf1f6;
+$clr-white: #ffffff;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, $clr-light 0%, $clr-white 100%);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+
+.add {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: $clr-medium;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: $clr-white;
+}
+
+.note {
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 2rem 2rem;
+  //padding: 2rem;
+  height: 30.5rem;
+  width: 30.5rem;
+
+  .tools {
+    background-color: $clr-medium;
+    border-radius: 0.4rem 0.4rem 0 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    color: $clr-white;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+  button:focus {
+    outline: none;
+  }
+  textarea {
+    outline: none;
+    font-family: $ff-accent;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 0.4rem;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+  }
+  .main {
+    padding: 1.4rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
